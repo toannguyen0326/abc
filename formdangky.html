@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form đăng ký</h1>
+<form >
+    <table>
+        <tr>
+            <td><label for="name">name</label></td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="email">email</label></td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="password">password</label></td>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td><label for="address">address</label></td>
+            <td>
+                <select name="" id="address">
+                    <option value="HN">Hà Nội</option>
+                    <option value="DN">Đà Nẵng</option>
+                    <option value="HCM">TPHCM</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="avatar">avatar</label></td>
+            <td><input type="file" id="avatar"></td>
+        </tr>
+        <tr>
+            <td><label for="classes">Ban co phai HV khong</label></td>
+            <td>
+                <input type="checkbox" name="classes" id="classes" checked> Co
+            </td>
+        </tr>
+        <tr>
+            <td>Gioi tinh</td>
+            <td>
+                <input type="radio" name="gt" id="nam"><label for="nam">nam</label>
+                <input type="radio" name="gt" id="nu"><label for="nu">nu</label>
+                <input type="radio" name="gt" id="khac"><label for="khac">khac</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" onclick="nhannutsumit()">submit</button></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function nhannutsumit() {
+        let name = document.getElementById("name").value;
+        alert(name)
+    }
+</script>
+</body>
+</html>
+© 2020 GitHub, Inc.
