@@ -5,6 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-
+<table border="1" >
+    <tr>
+        <th>amount</th>
+        <th>from</th>
+        <th>to</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="amount"></td>
+        <td>
+            <select name="from" id="from">
+                <option value="1">vnd</option>
+                <option value="23000">usd</option>
+                <option value="21000">jpy</option>
+            </select>
+        </td>
+        <td>
+            <select name="to" id="to">
+            <option value="1">vnd</option>
+            <option value="23000">usd</option>
+            <option value="21000">jpy</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<button onclick="chuyen_doi()">chuyen_doi</button>
+<script src="index.js"></script>
 </body>
 </html>
